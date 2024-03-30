@@ -276,13 +276,13 @@ line-height: 1.07;
 /* margin-left: auto; */
 /* margin-right:auto; */
 /* margin-bottom: 48px; */
-padding-left: 52px;
-padding-right: 52px;
+max-width: 216px;
 margin: 0 auto;
 margin-bottom: 72px;
-max-width: 496px;
+
 color: #fff;
 text-align: center;
+
 
 
 }
@@ -313,13 +313,76 @@ text-align: center;
         background-color: #404bbf;;
     }
 
-@media screen and (min-width: 768px) {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-rgba(46, 47, 66, 0.7)), url(../images/title-border-tab.jpg)
-
+@media (min-width: 768px) {
+    .title-section { 
+      
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),  url(../images/title-border-tab.jpg);
+        
+       
+    }
+    @media screen and (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+    
+        .title-section  {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/title-border-tab2x.jpg);
+        }
+        .title {
+            font-size: 56px;
+            margin-left: auto;
+        margin-right:auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 48px;
+        max-width: 496px;
+        text-align: center;
+        }
+    }
 }
 
 @media screen and (min-width: 1158px) {
+    .title-section { 
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),  url(../images/title-border.jpg);
+    padding: 188px 0;
+    
+}
+@media screen and (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+    
+        .title-section  {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/title-border2x.jpg);
+        }
+        
+    }
+  
+.title {
+    font-size: 56px;
+    margin-left: auto;
+margin-right:auto;
+padding-left: 0;
+padding-right: 0;
+margin-bottom: 48px;
+max-width: 496px;
+text-align: center;
+}
+    
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+
+    .title-section  {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+rgba(46, 47, 66, 0.7)), 
+url(../images/title-border-mob2x.jpg);
+    }
     
 }
 .privileg-container-list{
