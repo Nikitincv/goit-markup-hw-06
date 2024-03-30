@@ -256,7 +256,9 @@ background-color: #2e2f42;
 /* padding: 188px 0; */
 padding: 72px 0;
 /* max-width: 1440px; */
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/title-border.jpg);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+rgba(46, 47, 66, 0.7)), 
+url(../images/title-border-mob.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -311,7 +313,15 @@ text-align: center;
         background-color: #404bbf;;
     }
 
+@media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+rgba(46, 47, 66, 0.7)), url(../images/title-border-tab.jpg)
 
+}
+
+@media screen and (min-width: 1158px) {
+    
+}
 .privileg-container-list{
 
     width: 100%;
