@@ -94,7 +94,7 @@ padding-right: 16px;
 cursor: pointer;
 }
 
-
+/* /header///////////>>>>>>>//////>>>>>////// */
 
 .logo {
 font-family: "Raleway", sans-serif;
@@ -104,7 +104,6 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
-/* margin-right: 76px; */
 padding: 17px 0;
 }
 .logo-part {
@@ -247,6 +246,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+/* section-hero//////>>>>>>>///////>>>>>//// */
+
 .container-title {
     padding-left: 0;
     padding-right: 0;
@@ -313,29 +314,38 @@ text-align: center;
         background-color: #404bbf;;
     }
 
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+
+    .title-section  {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+rgba(46, 47, 66, 0.7)), 
+url(../images/title-border-mob2x.jpg);
+    }
+    
+}
+
 @media (min-width: 768px) {
     .title-section { 
-      
+      padding: 112px 0;
         background-image:linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)),  url(../images/title-border-tab.jpg);
         
        
     }
+
+    
     @media screen and (min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), 
     (min-resolution: 2dppx) {
     
         .title-section  {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-    rgba(46, 47, 66, 0.7)), 
-    url(../images/title-border-tab2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/title-border-tab2x.jpg);
         }
         .title {
             font-size: 56px;
             margin-left: auto;
         margin-right:auto;
-        padding-left: 0;
-        padding-right: 0;
         margin-bottom: 48px;
         max-width: 496px;
         text-align: center;
@@ -343,10 +353,11 @@ text-align: center;
     }
 }
 
+
+
 @media screen and (min-width: 1158px) {
     .title-section { 
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), 
-    rgba(46, 47, 66, 0.7)),  url(../images/title-border.jpg);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/title-border.jpg);
     padding: 188px 0;
     
 }
@@ -357,7 +368,7 @@ text-align: center;
         .title-section  {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), 
-    url(../images/title-border2x.jpg);
+    url(../images/title-border-des2x.png);
         }
         
     }
@@ -375,21 +386,17 @@ text-align: center;
     
 }
 
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
-(min-resolution: 2dppx) {
+/* privileg////////>>>>>//////>>>>>///// */
 
-    .title-section  {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-rgba(46, 47, 66, 0.7)), 
-url(../images/title-border-mob2x.jpg);
-    }
-    
-}
+
 .privileg-container-list{
 
     width: 100%;
 display: flex;
 flex-wrap: wrap;
+/* flex-direction: column;
+justify-content: center;
+align-items: center; */
 gap: 72px;
 
 
@@ -456,12 +463,14 @@ color: #434455;
         row-gap: 72px;
         column-gap: 24px;
     }
+
+  
 }
 
 @media screen and (min-width: 1158px) {
 
  .container {
-        width: 1160px;
+        width: 1158px;
     }
     .privileg-item {
         width: calc((100% - 3 * 24px) / 4);
@@ -483,19 +492,13 @@ text-align: start;
 
     .icon-privileg {
         display: flex;
-        gap: 24px;
-        margin-bottom: 8px;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #8e8f99;
-        border-radius: 4px;
-        width: 264px;
-        height: 112px;
-        background-color: #f4f4fd;
+        max-width: 264px;
         
     }
+    
+    
 }
-
+/* team-section/////////>>>>//////>>>>> */
      .team-title {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -513,9 +516,11 @@ text-align: start;
 
 .team-list {
 display: flex;
+flex-wrap: wrap;
 flex-direction: column;
-
-gap: 24px;
+justify-content: center;
+align-items: center;
+gap: 72px;
 width: 100%;
 
 
@@ -576,6 +581,7 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team {
+display: block;
 background-color: #fff;
 border-radius: 0 0 4px 4px;
 padding: 0px 0px 32px 0px;
@@ -583,7 +589,7 @@ width: 264px;
 height: 428px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
-width: calc((100% - 3 * 24px) / 4);
+
 }
 
 .team-wrap {
@@ -600,7 +606,40 @@ width: calc((100% - 3 * 24px) / 4);
     margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .team {
+        max-width: 264px;
+        
+        width: calc((100% - 24px) / 2);
+       }
+       
+       .team-list {
+        flex-direction: row;
+        align-items: center;
+        row-gap: 64px;
+        column-gap: 24px;
+       }
+}
 
+@media screen and (min-width: 1158px) {
+
+    .container {
+        width: 1158px;
+    }
+
+    .team {
+        width: calc((100% - 3 * 24px) / 4)
+    }
+    
+    .team-list {
+        gap: 24px;
+    }
+}
+
+/* our-portfolio////////>>>>>>///////>>>>//////// */
 
 .our-portfolio-title {
 font-family: "Roboto", sans-serif;
@@ -690,6 +729,9 @@ width: 360px;
 height: 120px;
 }
 
+
+
+/* footer///////>>>>>/////>>>>>////>>>>///// */
 .footer {
     background-color: #2e2f42;
     
@@ -882,6 +924,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+
+/* modal///////>>>>>/////>>>>>/////>>>>>//////>>>///// */
 
 .backdrop {
 background-color: rgba(46, 47, 66, 0.4);;
